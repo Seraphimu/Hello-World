@@ -40,6 +40,8 @@
 //     return 0;
 // }
 
+
+
 // //輸出下列形式的楊輝三角前十行
 // /* 
 // 1
@@ -60,63 +62,64 @@
 //     arr[5] = 1, 1+1+1+1+1, 1+1+1+1+1+1+ 1+1+1+1, 1
 //     arr[i][j] = arr[i - 1][j]
 // */
-#include <stdio.h>
-#define MAX 10
-void f(int arr[][MAX], int len)
-{
-    int i;
-    for (i = 0; i < len; i++)
-    {
-        arr[i][0] = 1;
-    }
-}
-void g(int arr[][MAX], int len)
-{
-    f(arr, MAX);
-    int i, j;
-    for (i = 1; i < len; i++)
-    {
-        for (j = 1; j <= i; j++)
-        {
-            arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
-        }
-    }
-}
-int main(void)
-{
-    int arr[MAX][MAX] = {0};
-    g(arr, MAX);
-
-    for (int i = 0; i < MAX; i++)
-    {
-        for (int j = 0; j <= i; j++)
-        {
-            printf("%5d", arr[i][j]);
-        }
-        putchar('\n');
-    }
-    return 0;
-}
-// //遞歸方法
+// //迭代法
 // #include <stdio.h>
 // #define MAX 10
-// int f(int i, int j)
+// void f(int arr[][MAX], int len)
 // {
-//     if (j == 0 || j == i)
-//         return 1;
-//     else
-//         return f(i - 1, j - 1) + f(i - 1, j);
+//     int i;
+//     for (i = 0; i < len; i++)
+//     {
+//         arr[i][0] = 1;
+//     }
+// }
+// void g(int arr[][MAX], int len)
+// {
+//     f(arr, MAX);
+//     int i, j;
+//     for (i = 1; i < len; i++)
+//     {
+//         for (j = 1; j <= i; j++)
+//         {
+//             arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
+//         }
+//     }
 // }
 // int main(void)
 // {
-//     for (int i = 0; i < 3; i++)
+//     int arr[MAX][MAX] = {0};
+//     g(arr, MAX);
+
+//     for (int i = 0; i < MAX; i++)
 //     {
 //         for (int j = 0; j <= i; j++)
 //         {
-//             printf("%4d", f(i, j));
+//             printf("%5d", arr[i][j]);
 //         }
 //         putchar('\n');
 //     }
 //     return 0;
 // }
+//遞歸方法
+#include <stdio.h>
+#define MAX 10
+int f(int i, int j)
+{
+    if (j == 0 || j == i)
+        return 1;
+    else
+        return f(i - 1, j - 1) + f(i - 1, j);
+}
+int main(void)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            printf("%4d", f(i, j));
+        }
+        putchar('\n');
+    }
+    return 0;
+}
 
