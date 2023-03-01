@@ -112,3 +112,86 @@ int main(void)
     return 0;
 }
 ```
+
+
+//楊輝三角
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+```c
+//數組迭代方法
+#include <stdio.h>
+#define MAX 100
+void Init(int arr[][MAX], int len)
+{
+    int i;
+    for (i = 0; i < len; i++)
+    {
+        arr[i][0] = 1;
+    }
+}
+void Task(int arr[][MAX], int len)
+{
+    int i,j;
+    for (i = 1; i < len; i++)
+    {
+        for (j = 1; j < len; j++)
+        {
+            arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];  //這裏寫錯了一次
+        }
+    }
+
+}
+void Dis(int arr[][MAX], int len)
+{
+    int i, j;
+    for (i = 0; i < len; i++)
+    {
+        for (j = 0; j <= i; j++)
+        {
+            printf("%d ", arr[i][j]);
+        }
+        putchar('\n');
+    }
+}
+int main(void)
+{
+    int n = 0;
+    int arr[MAX][MAX];
+    scanf("%d", &n);
+    
+    Init(arr, n);
+    Task(arr, n);
+    Dis(arr, n);
+
+    return 0;
+}
+```
+
+```c
+//遞歸
+#include <stdio.h>
+int f(int i, int j)
+{
+    if (i == j || j == 0)
+        return 1;
+    return f(i - 1, j - 1) + f(i - 1, j);
+}
+int main(void)
+{
+    int n;
+    scanf("%d", &n);
+    int i, j;
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j <= i; j++)
+        {
+            printf("%d ", f(i, j));
+        }
+        putchar('\n');
+    }
+    return 0;
+}
+```
