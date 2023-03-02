@@ -20,7 +20,6 @@ int main(void)
 }
 ```
 
-
 輸入10個數，冒泡排序
 ```c
 #include <stdio.h>
@@ -114,12 +113,14 @@ int main(void)
 ```
 
 
-//楊輝三角
+楊輝三角
 1
 1 1
 1 2 1
 1 3 3 1
 1 4 6 4 1
+
+方法一：
 ```c
 //數組迭代方法
 #include <stdio.h>
@@ -170,6 +171,7 @@ int main(void)
 }
 ```
 
+方法二：
 ```c
 //遞歸
 #include <stdio.h>
