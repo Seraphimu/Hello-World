@@ -27,66 +27,66 @@
 //     return sum;
 // }
 
-//二分查找，先排后找
-//選擇排序
-#include <stdio.h>
-#include <stdlib.h>
-#define MAX 100
+// //二分查找，先排后找
+// //選擇排序
+// #include <stdio.h>
+// #include <stdlib.h>
+// #define MAX 100
 
-void SelectionSort(int arr[], int len);
-int BinSearch(int arr[], int len, int value);
-void Swap(int *num1, int *num2);
+// void SelectionSort(int arr[], int len);
+// int BinSearch(int arr[], int len, int value);
+// void Swap(int *num1, int *num2);
 
-int main(void)
-{
-    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 15};
-    int n = sizeof(arr) / sizeof(arr[0]);
+// int main(void)
+// {
+//     int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 15};
+//     int n = sizeof(arr) / sizeof(arr[0]);
 
-    int answer = BinSearch(arr, n, 15);
-    printf("index = %d\n", answer);
+//     int answer = BinSearch(arr, n, 15);
+//     printf("index = %d\n", answer);
 
-    return 0;
-}
+//     return 0;
+// }
 
-void SelectionSort(int arr[], int len)
-{
-    int i, j;
-    for (i = 0; i < len - 1; i++)
-    {
-        int min = i;
-        for (j = i + 1; j < len; j++)
-        {
-            if (arr[min] > arr[j])
-                min = j;
-        }
-        Swap(&arr[min], &arr[i]);
-    }
-}
-int BinSearch(int arr[], int len, int value)
-{
-    SelectionSort(arr, len);
-    int left = 0;
-    int right = len - 1;
-    int mid;
+// void SelectionSort(int arr[], int len)
+// {
+//     int i, j;
+//     for (i = 0; i < len - 1; i++)
+//     {
+//         int min = i;
+//         for (j = i + 1; j < len; j++)
+//         {
+//             if (arr[min] > arr[j])
+//                 min = j;
+//         }
+//         Swap(&arr[min], &arr[i]);
+//     }
+// }
+// int BinSearch(int arr[], int len, int value)
+// {
+//     SelectionSort(arr, len);
+//     int left = 0;
+//     int right = len - 1;
+//     int mid;
 
-    while (left <= right)
-    {
-        //這裏踩坑了，當時寫了個減號，直接死循環
-        mid = (right + left) / 2;
-        if (value == arr[mid])
-            return (right + left) / 2;
-        else if (value > arr[mid])
-            left = mid + 1;
-        else
-            right = mid - 1;
-    }
-    printf("I can't find the value: %d\n", value);
-    return -114514;
-}
+//     while (left <= right)
+//     {
+//         //這裏踩坑了，當時寫了個減號，直接死循環
+//         mid = (right + left) / 2;
+//         if (value == arr[mid])
+//             return (right + left) / 2;
+//         else if (value > arr[mid])
+//             left = mid + 1;
+//         else
+//             right = mid - 1;
+//     }
+//     printf("I can't find the value: %d\n", value);
+//     return -114514;
+// }
 
-void Swap(int *num1, int *num2)
-{
-    int tmp = *num1;
-    *num1 = *num2;
-    *num2 = tmp;
-}
+// void Swap(int *num1, int *num2)
+// {
+//     int tmp = *num1;
+//     *num1 = *num2;
+//     *num2 = tmp;
+// }
