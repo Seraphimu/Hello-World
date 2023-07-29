@@ -299,3 +299,61 @@ date -s <字符串时间>
 cal <年份> #显示这一年日历
 ```
 
+### 009. 查找指令
+
+`find`指令
+
+```bash
+find <目录> <选项>
+# -name <文件名>
+# -size <文件大小>
+# -user <用户名>
+```
+
+`locate`指令
+
+```bash
+updatedb # 先更新库
+locate <文件名>
+
+```
+
+`which`指令
+
+```bash
+which <指令>
+```
+
+`grep` command
+
+```bash
+grep <选项> <查找内容> <文件>
+grep -n #显示行号
+grep -i #忽略大小写
+```
+
+###  010. 压缩指令
+
+`gzip`指令
+
+```bash
+gzip <文件>
+gunzip <压缩包>
+```
+
+`zip`指令
+
+```bash
+zip <目标文件名> <文件或路径>
+# 例
+zip -r myhome /home/*
+unzip -d ./tmp /home/myhome
+```
+
+`tar` 指令
+
+```bash
+tar -<选项> <目标文件> <打包内容>
+
+```
+
