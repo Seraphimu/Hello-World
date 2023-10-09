@@ -10,3 +10,4 @@ typedef struct SeqList {
 
 void SeqListTest1(void);         //测试
 void SeqListInit(SL * ps);          //初始化
+void SeqListPushBack(SL * ps, SLDataType x);
