@@ -46,7 +46,7 @@ sync               #把内存数据同步到硬盘上防止数据丢失
 
 ```bash
 useradd <用户名>                  #家目录默认在/home/用户名
-useradd -d <路径> <用户名>         #指定家目录路径用-d选项
+useradd -d <路径> <用户名>         #d是directory的意思，中文为路径
 ```
 
 修改密码
@@ -65,7 +65,7 @@ pwd                                #显示当前用户所在目录
 
 ```bash
 userdel <用户名>                    #仅删除用户
-userdel -r <用户名>                 #删除用户和数据
+userdel -r <用户名>                 #连同家目录一块删除，要慎重
 ```
 
 查询用户信息
@@ -354,12 +354,47 @@ unzip -d ./tmp /home/myhome
 
 ```bash
 tar -<选项> <目标文件> <打包内容>
-# 多个文件打空格
--c
--f
--v
--z
--x
--C
+
 ```
 
+## Linux组介绍
+每个用户必须属于一个组
+文件：所有者（创建者，改变），所在组（所有者所在组），其他组
+### 查看文件/目录的所有者
+```bash
+ls -alh
+```
+### 改变文件所有者
+```bash
+chown <用户名> <文件>
+```
+
+### 组的创建
+```bash
+groupadd <组名>
+#例
+groupadd monster
+useradd -g monster fox
+```
+所有组的概念：创建文件的用户即所有者，创建其所在的组即所在组
+
+修改所在的组：
+```bash
+chgrp <组名> <文件名>
+```
+
+### 在Linux中使用便携软件
+```bash
+vim /etc/profile
+export <NAME>=$PATH:<DIRECTORY>
+export PATH=<$NAME>/<DIRECTORY>:$PATH
+```
+
+### vim
+vim批量注释
+```bash
+#批量添加
+:<起始行>, <最终行>s#^#//#g
+#批量删除
+:<起始行>, <最终行>s#^//##g
+```
