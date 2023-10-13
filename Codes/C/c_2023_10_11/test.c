@@ -31,7 +31,7 @@ int main(void)
     printf("%d\n", a->data);
 
     SL * ps;
-    SeqListInit(ps);
+    SeqListInit(&ps);
 
     return 0;
 }
