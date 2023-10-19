@@ -18,7 +18,7 @@ void SListNodePrint(SListNode * phead)
 
 void SListNodePushBack(SListNode ** pphead, DataType x)
 {
-    SListNode * newNode = (SListNode *)malloc(sizeof (SListNode *));
+    SListNode * newNode = (SListNode *)malloc(sizeof (SListNode));
     newNode->data = x;
     newNode->next = NULL;
 

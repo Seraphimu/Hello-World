@@ -20,7 +20,7 @@ void SListNodePushBack(SListNode ** phead, DataType x)
 {
     printf("**phead == %p\n", phead);
     printf("*phead == %p\n", *phead);
-    SListNode * newNode = (SListNode *)malloc(sizeof (SListNode *));
+    SListNode * newNode = (SListNode *)malloc(sizeof (SListNode));
     newNode->data = x;
     newNode->next = NULL;
 

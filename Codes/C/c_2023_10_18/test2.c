@@ -18,7 +18,7 @@ void SListNodePrint(SListNode * phead)
 
 void SListNodePushBack(SListNode ** phead, DataType x)
 {
-    SListNode * newNode = (SListNode *)malloc(sizeof (SListNode *));
+    SListNode * newNode = (SListNode *)malloc(sizeof (SListNode));
     newNode->data = x;
     newNode->next = NULL;
 
@@ -34,10 +34,25 @@ void SListNodePushBack(SListNode ** phead, DataType x)
     }
 }
 
+void SListPopFront(SListNode ** pphead)
+{
+    if (*pphead == NULL) {
+        return;
+    }
+    SListNode * next = (*pphead)->next;
+    free(*pphead);
+    *pphead = next;
+    // SListNode * head = *pphead;
+    // head = head->next;
+    // free(*pphead);
+}
+
 void Test(void)
 {
     SListNode * plist = NULL;       //初始化
     SListNodePushBack(&plist, 114514);
+    // SListNodePrint(plist);
+    SListPopFront(&plist);
     SListNodePrint(plist);
 }
 
