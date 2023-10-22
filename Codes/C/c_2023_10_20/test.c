@@ -87,6 +87,41 @@ void SListPopFront(SListNode ** pphead)
     // free(*pphead);
 }
 
+SListNode * SListFind(SListNode * phead, DataType x)
+{
+    //空表，直接返回
+    if (phead == NULL) {
+        printf("none \n");
+        return NULL;
+    }
+    //只有一个节点时
+    else if (phead->next == NULL) {
+        if (phead->data == x) {
+            return phead;
+        }
+        else {
+            printf("找不到\n");
+            return NULL;
+        }
+    }
+    //有多个节点时
+    else {
+        SListNode * tmp = phead;
+        while (tmp->next != NULL) {
+            if (tmp->data == x) {
+                return tmp;
+            }
+            else {
+                tmp = tmp->next;
+            }
+        }
+        if (tmp->next == NULL) {
+            printf("找不到\n");
+            return NULL;
+        }
+    }
+}
+
 void Test1(void)
 {
     SListNode * plist = NULL;
@@ -115,11 +150,23 @@ void Test2(void)
     SListPopFront(&plist);
     SListPrint(plist);
 }
+void Test3(void)
+{
+    SListNode * plist = NULL;
+    SListPushBack(&plist, 114514);
+    SListPushBack(&plist, 114);
+    SListPushBack(&plist, 514);
+    SListPushBack(&plist, 1919810);
+    SListPrint(plist);
+
+    SListFind(plist, 3333);
+}
 
 int main(void)
 {
     // Test1();
-    Test2();
+    // Test2();
+    Test3();
 
     return 0;
 }

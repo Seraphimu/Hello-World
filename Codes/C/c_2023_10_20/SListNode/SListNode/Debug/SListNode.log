@@ -1,2 +1,3 @@
 ﻿  SListNode.c
+E:\Repos\Hello-World\Codes\C\c_2023_10_20\SListNode\SListNode\SListNode.c(124): warning C4716: “SListRemove”: 必须返回一个值
   SListNode.vcxproj -> E:\Repos\Hello-World\Codes\C\c_2023_10_20\SListNode\Debug\SListNode.exe
