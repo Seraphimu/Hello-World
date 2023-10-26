@@ -1,0 +1,2 @@
+﻿  ping.c
+C:\Users\atri\MyFiles\Study\Repos\Github\Hello-World\Codes\C\c_2023_10_26\ping\ping\ping.c(15,10): fatal  error C1083: 无法打开包括文件: “unistd.h”: No such file or directory
