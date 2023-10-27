@@ -1,13 +1,34 @@
+//二分查找
+#include <stdio.h>
 
+typedef int DataType;
 
+int main(void) {
+    DataType arr[] = {-2, -1, 0, 1, 2, 3};
+    int l = 0;
+    int r = sizeof (arr) / sizeof(DataType) - 1;
+    int m, n;
+    
+    scanf("%d", &n);
+    while (l <= r) {
+        m = (l + r) / 2;
+        if (arr[m] == n) {
+            printf("找到了，是%d, 下标是%d\n", arr[m], m);
+            break;
+        }
+        else if (n > arr[m]) {
+            l = m + 1;
+        }
+        else {
+            r = m - 1;
+        }
+    }
+    if (l > r) {
+        printf("找不到\n");
+    }
 
-
-
-
-
-
-
-
+    return 0;
+}
 
 
 // #include <stdio.h>
