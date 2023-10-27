@@ -1,9 +1,8 @@
 #include <stdio.h>
 int f(int n)
 {
-    if (n < 16)
-        printf("%d ", n % 16);
-    else {
+    printf("%d ", n % 16);
+    if (n > 16) {
         f(n / 16);
     }
 }
@@ -33,8 +32,8 @@ int main(void)
 {
     int n = 0;
     scanf("%d", &n);
-    //f(n);
-    h(n);
+    f(n);
+    // h(n);
     //g(n);
 
     return 0;
