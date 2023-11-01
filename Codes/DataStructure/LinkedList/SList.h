@@ -8,28 +8,28 @@ typedef struct SListNode {
 	struct SListNode* next;
 }SLTNode;
 
-//³õÊ¼»¯
+//åˆå§‹åŒ–
 void SLTInit(SLTNode** pphead);
-//·ÖÅä¿Õ¼ä
+//åˆ†é…ç©ºé—´
 SLTNode* SLTBuyCapacity(SLTDataType x);
 
-//Î²²å
+//å°¾æ’
 void SLTPushBack(SLTNode** pphead, SLTDataType x);
-//Í·²å
+//å¤´æ’
 void SLTPushFront(SLTNode** pphead, SLTDataType x);
-//ÔÚposÇ°Ãæ²åÈë
+//åœ¨poså‰é¢æ’å…¥
 void SLTInsert(SLTNode** pphead, SLTNode* pos, SLTDataType x);
-//ÔÚposºóÃæ²åÈë
+//åœ¨posåé¢æ’å…¥
 void SLTInsertAfter(SLTNode* pos, SLTDataType x);
 
-//Î²É¾
+//å°¾åˆ 
 void SLTPopBack(SLTNode** pphead);
-//Í·É¾
+//å¤´åˆ 
 void SLTPopFront(SLTNode** pphead);
-//É¾³ıposÎ»ÖÃ
+//åˆ é™¤posä½ç½®
 void SLTErase(SLTNode** pphead, SLTNode* pos);
-//É¾³ıposºóÃæµÄÎ»ÖÃ
+//åˆ é™¤posåé¢çš„ä½ç½®
 void SLTEraseAfter(SLTNode* pos);
 
-//´òÓ¡
+//æ‰“å°
 void SLTPrint(SLTNode* phead);
