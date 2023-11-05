@@ -20,7 +20,7 @@ LNode * LNBuyCapacity(DataType x) {
 	return newnode;
 }
 void LNPushBack(LNode ** pphead, DataType x) {
-	LNode * newndoe = LNBuyCapacity(x);
+	LNode * newnode = LNBuyCapacity(x);
 	if (*pphead == NULL) {
 		*pphead = newnode;	
 	}

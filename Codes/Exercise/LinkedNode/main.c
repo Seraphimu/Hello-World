@@ -4,7 +4,12 @@ void Test(void) {
 	LNode * plist;
 	
 	LNInit(&plist);
-	LNBuyCapacity(114514);
+	LNPushBack(&plist, 1);
+	LNPushBack(&plist, 1);
+	LNPushBack(&plist, 4);
+	LNPushBack(&plist, 5);
+	LNPushBack(&plist, 1);
+	LNPushBack(&plist, 4);
 }
 
 int main(void) {
