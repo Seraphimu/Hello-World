@@ -1,9 +1,10 @@
 #include "LinkedNode.h"
 
+//初始化
 void LNInit(LNode ** pphead) {
 	*pphead = NULL;
 }
-
+//分配空间
 LNode * LNBuyCapacity(DataType x) {
 	LNode * newnode = (LNode *)malloc(sizeof(LNode));
 	
@@ -17,4 +18,17 @@ LNode * LNBuyCapacity(DataType x) {
 	}
 	
 	return newnode;
+}
+void LNPushBack(LNode ** pphead, DataType x) {
+	LNode * newndoe = LNBuyCapacity(x);
+	if (*pphead == NULL) {
+		*pphead = newnode;	
+	}
+	else {
+		LNode * tail = *pphead;
+		while (tail->next) {
+			tail = tail->next;	
+		}
+		tail->next = newnode;	
+	}
 }
