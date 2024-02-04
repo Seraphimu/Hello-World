@@ -35,7 +35,7 @@ namespace HelloWorld
 
 1. `using System` means that we can use classes from the `System` namespace.
 2. A blank line. C# ignores white space. However, multiple lines **make the code more readable**.
-3. namespace is used to organize my code, and it is a container for other namespaces and classes.
+3. namespace is used to organize your code, and it is a container for other namespaces and classes.
 4. The curly braces  `{}` marks the beginning and the end of a block of code.
 5. class is a container for data and methods.
 6. Main() method always appear in a C# program. Any code inside its curly brackets `{}` will be executed. 
@@ -80,6 +80,8 @@ namespace HelloWorld
 ### C# Comments
 
 Comments can be used to explain C# code, and to make it more readable. It also be used to prevent execution when testing alternative code.(It may be that prevent the code that you don't wish running)
+
+Any text between `//` and the end of the line is ignored by C# (will not be executed).
 
 1. single line comments
 
@@ -234,7 +236,7 @@ Console.WriteLine(x + y);	//Use WriteLine() method to display the value of x+y, 
 
 Declare Many Variables:
 
-To declare more than one variable of the same type, use a comma(,)-separated(alone) list:
+To declare more than one variable of the same type, use a comma(`,`)-separated(alone) list:
 
 ```c#
 int x = 5, y = 6, z = 50;
@@ -256,7 +258,7 @@ These unique names are called identifiers.
 
 Identifiers can be short names or more descriptive(mean) names.
 
-It is recommended to use descriptive names in order to create understandable and maintainable code and to make the code more readable. (readable)
+It is recommended to use descriptive names in order to create understandable and  code and to make the code more readable. (readable)
 
 ```c#
 //Good
