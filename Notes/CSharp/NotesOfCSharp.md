@@ -275,5 +275,111 @@ The general rules for naming variables are:
 - Names are case sensitive(myVar and myvar are different variables);
 - Reserved words (like keywords, such as `int` or `double`) cannot be used as names.
 
+### C# Data Types
 
+A variable in C# must be a specified data type:
+
+```c#
+int myInt;
+double myDoubleNum;
+char myLetter;
+bool myBool;
+string myText;
+```
+
+A data type specifies the size and type of variable values.
+
+It is important to use the correct data type for the corresponding variable; to avoid errors, to save time and memory, but it will also make your code more maintainable and readable. The most common data types are:
+
+| Data Type | Size                  | Description                                                  |
+| :-------- | :-------------------- | :----------------------------------------------------------- |
+| int       | 4 bytes               | Stores whole numbers from -2,147,483,648 to 2,147,483,647    |
+| long      | 8 bytes               | Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+| float     | 4 bytes               | Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits |
+| double    | 8 bytes               | Stores fractional numbers. Sufficient for storing 15 decimal digits |
+| bool      | 1 bit                 | Stores true or false values                                  |
+| char      | 2 bytes               | Stores a single character/letter, surrounded by single quotes |
+| string    | 2 bytes per character | Stores a sequence of characters, surrounded by double quotes |
+
+Number types:
+
+1. Integer types stores whole numbers.
+2. Floating point types represents numbers with a fractional part.
+
+Integer Types (You should end the value with L for long types):
+
+```c#
+int myNum = 114514;
+long myNum = 1145141919810L;
+```
+
+Floating point types (You should end the value with an F for floats and D for doubles):
+
+```c#
+float myNum = 114.514F;
+double myNum = 114.5D;
+```
+
+Scientific Numbers (A floating point number can also be scientific number with an 'e' to indicate the power of 10:
+
+```c#
+float f = 1e10F;
+double d = 1E10D;
+```
+
+### Type Casting
+
+1. implicit casting (automatically)
+
+   ```c#
+   int a = 114.514;
+   ```
+
+2. explicit casting (manually)
+
+   ```c#
+   double d = 11.4;
+   int a = (int)d;
+   ```
+
+3. type conversion methods (explicit manually)
+
+   ```c#
+   int myInt = 10;
+   double myDouble = 2.5;
+   bool myBool = true;
+   Console.WriteLine(Convert.ToString(myInt));
+   Console.WriteLine(Convert.ToDouble(myInt));
+   Console.WriteLine(Convert.ToInt32(myDouble));
+   Console.WriteLine(Convert.ToString(myBool));
+   ```
+
+### User input
+
+You have already learned that `Console.WriteLine()` is used to output values. 
+
+Now we will use `Console.ReadLine()` to get user input.
+
+In the following example, the user can input his or hers username, which is stored in the variable `userName`. Then we output the value of `userName`
+
+```c#
+string userName = Console.ReadLine();
+Console.WriteLine("Usename: " + userName);
+```
+
+**The `Console.ReadLine()` method returns a `string`**. Therefore, you cannot get information from another data type, such as `int`. The following program will cause an error (Cannot implicitly convert type `string` to `int`):
+
+```c#
+int age = Console.ReadLine();
+Console.WriteLine(age);
+```
+
+Like the error message says, you cannot implicitly convert type `string` to `int`.
+
+Luckily, for you, you just learned from the previous chapter (Type Casting), that you can convert any type explicitly, by using one of the `Convert.To.<type>(variable or numbers)` methods:
+
+```c#
+int age = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine(age);
+```
 

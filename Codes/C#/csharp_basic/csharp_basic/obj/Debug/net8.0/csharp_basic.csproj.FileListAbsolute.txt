@@ -1,0 +1,15 @@
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\bin\Debug\net8.0\csharp_basic.exe
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\bin\Debug\net8.0\csharp_basic.deps.json
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\bin\Debug\net8.0\csharp_basic.runtimeconfig.json
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\bin\Debug\net8.0\csharp_basic.dll
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\bin\Debug\net8.0\csharp_basic.pdb
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\obj\Debug\net8.0\csharp_basic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\obj\Debug\net8.0\csharp_basic.AssemblyInfoInputs.cache
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\obj\Debug\net8.0\csharp_basic.AssemblyInfo.cs
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\obj\Debug\net8.0\csharp_basic.csproj.CoreCompileInputs.cache
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\obj\Debug\net8.0\csharp_basic.sourcelink.json
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\obj\Debug\net8.0\csharp_basic.dll
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\obj\Debug\net8.0\refint\csharp_basic.dll
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\obj\Debug\net8.0\csharp_basic.pdb
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\obj\Debug\net8.0\csharp_basic.genruntimeconfig.cache
+D:\Protable\Repositories\Hello-World\Codes\C#\csharp_basic\csharp_basic\obj\Debug\net8.0\ref\csharp_basic.dll
