@@ -383,3 +383,165 @@ int age = Convert.ToInt16(Console.ReadLine());
 Console.WriteLine(age);
 ```
 
+### C# Operators
+
+Operators are used to perform operations on variables and values.
+
+In the example below, we use the `+` operator to add together two values.
+
+```c#
+int x = 114 + 514;
+```
+
+Although the `+` operator is often used to add together two values, like in example above, it can be used to add together a variable and a value, or a variable and another variable:
+
+```c#
+int sum1 = 114514 + 1919810;	//add together two values
+int sum2 = sum1 + 24;			//add together a variable and a value
+int sum3 = sum1 + sum2;			//add together a variable and other variable
+```
+
+#### Arithmetic Operators
+
+Arithmetic operators are used to perform common mathematical operations:
+
+| Operator | Name           | Description                            | Example |
+| :------- | :------------- | :------------------------------------- | :------ |
+| +        | Addition       | Adds together two values               | x + y   |
+| -        | Subtraction    | Subtracts one value from another       | x - y   |
+| *        | Multiplication | Multiplies two values                  | x * y   |
+| /        | Division       | Divides one value by another           | x / y   |
+| %        | Modulus        | Returns the division remainder         | x % y   |
+| ++       | Increment      | Increases the value of a variable by 1 | x++     |
+| --       | Decrement      | Decreases the value of a variable by 1 | x--     |
+
+#### Assignment Operators:
+
+Assignment operators are used to assign values to variables.
+
+In the example below, we use the **assignment operator (`=`)** to assign the value 10 to a variable called x:
+
+```c#
+int x = 10;
+```
+
+The addition assignment operator `+=` adds a value to a variable:
+
+```c#
+int x = 10;
+x += 3;
+```
+
+A list of all assignment operator:
+
+| Operator | Example | Same As    |
+| :------- | :------ | :--------- |
+| =        | x = 5   | x = 5      |
+| +=       | x += 3  | x = x + 3  |
+| -=       | x -= 3  | x = x - 3  |
+| *=       | x *= 3  | x = x * 3  |
+| /=       | x /= 3  | x = x / 3  |
+| %=       | x %= 3  | x = x % 3  |
+| &=       | x &= 3  | x = x & 3  |
+| \|=      | x \|= 3 | x = x \| 3 |
+| ^=       | x ^= 3  | x = x ^ 3  |
+| >>=      | x >>= 3 | x = x >> 3 |
+| <<=      | x <<= 3 | x = x << 3 |
+
+Abstraction:
+
+`<variable> <operator>= <number>` equal to `<variable> = <variable> <operator> <number>`
+
+#### C# Comparison Operators
+
+Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.
+
+The return value of a comparison is either `True` or `False`. These values are known as `Boolean values`.
+
+In the following example, we use the **grater than operator (`>`)** to find out if 5 is grater than 3:
+
+```c#
+int x = 5;
+int y = 3;
+Console.WriteLine(x > y);	//Returns True, because 4 is greater than 3
+```
+
+A list of all comparison operators:
+
+| Operator | Name                     | Example |
+| :------- | :----------------------- | :------ |
+| ==       | Equal to                 | x == y  |
+| !=       | Not equal                | x != y  |
+| >        | Greater than             | x > y   |
+| <        | Less than                | x < y   |
+| >=       | Greater than or equal to | x >= y  |
+| <=       | Less than or equal to    | x <= y  |
+
+#### Logical Operators
+
+As with comparison operators, you also test for `True` or `False` values with logical operators.
+
+Logical operators are used to determine the logic between variable or values.
+
+A list of all logical operators:
+
+| Operator | Name        | Description                                             | Example            |
+| :------- | :---------- | :------------------------------------------------------ | :----------------- |
+| &&       | Logical and | Returns True if both statements are true                | x < 5 && x < 10    |
+| \|\|     | Logical or  | Returns True if one of the statements is true           | x < 5 \|\| x < 4   |
+| !        | Logical not | Reverse the result, returns False if the result is true | !(x < 5 && x < 10) |
+
+### C# Math
+
+The C# Math has many method that allows you to perform mathematical tasks on numbers.
+
+1. Max() method
+
+   The `Math.Max(x, y)` method can be used to find the highest value of x and y:
+
+   ```c#
+   Math.Max(114, 514);
+   ```
+
+2. Min() method
+
+   The `Math.Min(x, y)` method can be used to find the lowest value of x and y:
+
+   ```c#
+   Math.Min(114, 514);
+   ```
+
+3. Sqrt() method
+
+   The `Math.Sqrt(x)` method returns square root of x:
+
+   ```c#
+   Math.Sqrt(64);
+   ```
+
+4. Abs() method
+
+   The `Math.Abs(x)` method returns the absolute (positive) value of x:
+
+   ```c#
+   Math.Abs(-114);
+   ```
+
+5. Round() method
+
+   The `Math.Round(x)` rounds a number to the nearest whole number:
+
+   ```c#
+   Math.Round(9.99)
+   ```
+
+### C# Strings
+
+Strings are used for storing text.
+
+A`string` variable contains a collection of characters surrounded by double quotes:
+
+```c#
+string myName = "MyName";
+```
+
