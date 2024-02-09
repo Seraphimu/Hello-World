@@ -564,3 +564,135 @@ Console.WriteLine(txt.ToUpper());
 Console.WriteLine(txt.ToLower());
 ```
 
+#### C# Concatenation
+
+The `+` operator can be used between strings to combine them. This is called concatenation:
+
+```c#
+string firstName = "John";
+string lastName = "Doe";
+string name = firstName + lastName;
+Console.WriteLine(name);
+```
+
+You can also use the `string.Concat()` method to concatenate two strings:
+
+```c#
+string firstName = "John";
+string lastName = "Doe";
+string name = string.Concat(firstName, lastName);
+Console.WriteLine(name);
+```
+
+You can also add space in the method or `+` operator:
+
+```c#
+string firstName = "John";
+string lastName = "Doe";
+string name1 = string.Concat(firstName, " ", lastName);
+string name2 = firstName + " " + lastName;
+Console.WriteLine(name1);
+Console.WriteLine(name2);
+```
+
+If you add two numbers, the result will be a number:
+
+```c#
+int x = 10;
+int y = 20;
+int z = x + y;		//z will be 30
+```
+
+If you add two strings, the result will be a string concatenation:
+
+```c#
+string x = "10";
+string y = "20";
+string z = x + y;	//z will be 1020
+```
+
+If you add a number and a string, the result will be a string concatenation too:
+
+```c#
+int x = 114;
+string y = "TianSoHoE";
+Console.WriteLine(x + y);
+```
+
+#### String Interpolation
+
+Another option of string concatenation, is string interpolation, which substitutes values of variables into placeholders in a string. Note that you do not have to worry about spaces, like with concatenation:
+
+```c#
+string firstName = "John";
+string lastName = "Doe";
+string name = $"My full name is: {firstName} {lastName}";
+Console.WriteLine(name);
+//{firstName} will be John
+//{lastName} will be Doe
+//{string}
+```
+
+#### C# Access Strings
+
+You can access the characters in string by referring to its index number inside square brackets `[]`. (It looks like a array of char in C language.).
+
+This example prints the first character in `myString`:
+
+```c#
+string myString = "Hello, World!";
+Console.WriteLine(myString[0]);
+```
+
+> String indexes start with 0: [0] is the first character. [1] is the second character.
+
+This example prints the second character in `myString`
+
+```c#
+string myString = "Hello, World!";
+Console.WriteLine(myString[1]);
+```
+
+You can also find the index position of a specific character in a string, by using the `IndexOf()` method:
+
+```c#
+string myString = "Hello, World!";
+Console.WriteLine(myString.IndexOf('e'));	//Outputs 1
+```
+
+Another useful method is `Substring()`, which extracts the characters from a string, starting from the specified character position/index, and returns a new string. This method is often used together with `IndexOf()` to get the specific character position :
+
+```c#
+string myString = "Hello, World!";
+//Substring(begin), return [begin, end]
+Console.WriteLine(myString.Substring(myString.IndexOf('e')));
+```
+
+#### Special Characters
+
+Because strings must be written within quotes, C# will misunderstand this string, and generate an error:
+
+```c#
+string txt = "We are the so-called "Vikings" from the north. ";
+```
+
+The solution to avoid this problem, is use the backslash escape character.
+
+The backslash(`\`, slash is `/`) escape character turns special characters into string characters:
+
+| Escape character | Result | Description  |
+| :--------------- | :----- | :----------- |
+| `\'`             | `'`    | Single quote |
+| `\"`             | `"`    | Double quote |
+| `\\`             | `\`    | Backslash    |
+
+```c#
+//Solution:
+string txt = "We are the so-called \"Vikings\" from the north. ";
+```
+
+| Code | Result    |
+| :--- | :-------- |
+| `\n` | New Line  |
+| `\t` | Tab       |
+| `\b` | Backspace |

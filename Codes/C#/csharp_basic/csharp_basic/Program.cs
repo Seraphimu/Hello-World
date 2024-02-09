@@ -86,7 +86,58 @@
 //    }
 //}
 
-// Methods about string
-string txt = "Hello, World!";
-Console.WriteLine(txt.ToUpper());
-Console.WriteLine(txt.ToLower());
+//// Methods about string
+//string txt = "Hello, World!";
+//Console.WriteLine(txt.ToUpper());
+//Console.WriteLine(txt.ToLower());
+
+
+//// Concatenation
+//using System;
+//namespace Concatenation
+//{
+//    class Prog
+//    {
+//        static void Main(string[] args)
+//        {
+//            string firstName = "John";
+//            string lastName = "Doe";
+//            string name1 = string.Concat(firstName, " ", lastName);
+//            string name2 = firstName + " " + lastName + 114514;
+//            Console.WriteLine(name1);
+//            Console.WriteLine(name2);
+//        }
+//    }
+//}
+
+////String Interpolation
+//using System;
+//namespace StringInterpolation
+//{
+//    class Prog
+//    {
+//        static void Main(string[] arsg)
+//        {
+//            string firstName = "John";
+//            string lastName = "Doe";
+//            string name = $"My full name is: {firstName} {lastName}";
+//            Console.WriteLine(name);
+//        }
+//    }
+//}
+
+//Access String
+using System;
+namespace AccessString
+{
+    class Prog
+    {
+        static void Main(string[] args)
+        {
+            string myString = "Hello, World!";
+            Console.WriteLine(myString.Substring(myString.IndexOf('e')));
+            //Console.WriteLine(myString[0]);
+            //Console.WriteLine(myString.IndexOf('e'));
+        }
+    }
+}
