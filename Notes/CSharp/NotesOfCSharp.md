@@ -545,3 +545,22 @@ A`string` variable contains a collection of characters surrounded by double quot
 string myName = "MyName";
 ```
 
+#### String Length
+
+A string in C# is actually an object, which contain properties and methods that can perform certain operations on strings. For example, the length of string can be found with the  `Length` property (don't have () with method):
+
+```c#
+string txt = "abcde";
+Console.WriteLine(txt.Length);
+```
+
+#### Other Methods
+
+There are many string methods available, for example `ToUpper()` and `To lower()`, which returns a copy of the string converted to uppercase or lowercase:
+
+```c#
+string txt = "Hello, World!";
+Console.WriteLine(txt.ToUpper());
+Console.WriteLine(txt.ToLower());
+```
+

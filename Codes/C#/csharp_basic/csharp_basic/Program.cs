@@ -56,16 +56,37 @@
 //    }
 //}
 
-using System;
-namespace LogicalOperators
-{
-    class Prog
-    {
-        static void Main(string[] args)
-        {
-            double x = 114;
-            double y = 514;
-            Math.Max(x, y);
-        }
-    }
-}
+//C# Math
+//using System;
+//namespace LogicalOperators
+//{
+//    class Prog
+//    {
+//        static void Main(string[] args)
+//        {
+//            double x = 114;
+//            double y = 514;
+//            Math.Max(x, y);
+//        }
+//    }
+//}
+
+////String Length
+//using System;
+//namespace StringLength
+//{
+//    class Prog
+//    {
+//        static void Main(string[] args)
+//        {
+//            string txt = "abcde";
+//            int a = txt.Length;
+//            Console.WriteLine(a);
+//        }
+//    }
+//}
+
+// Methods about string
+string txt = "Hello, World!";
+Console.WriteLine(txt.ToUpper());
+Console.WriteLine(txt.ToLower());
