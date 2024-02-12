@@ -696,3 +696,52 @@ string txt = "We are the so-called \"Vikings\" from the north. ";
 | `\n` | New Line  |
 | `\t` | Tab       |
 | `\b` | Backspace |
+
+### C# Booleans
+
+Very often, in programming, you will need a data type that can only have one of two values, like:
+
+- YES / NO
+- ON / OFF
+- TRUE / FALSE
+
+For this, C# has a `bool` data type, which can take the values `true` or `false`.
+
+#### Boolean Values
+
+A Boolean type is declared with the `bool` keyword and can only take the values `true` or `false`:
+
+```c#
+bool isCSharpFun = true;
+bool isFishTasty = false;
+```
+
+However, it is more common to return boolean values from boolean expressions, for conditional testing (see below).
+
+#### Boolean Expression
+
+A Boolean expression returns a boolean value: `True` or `False`, by comparing values/variables.
+
+This is useful to build logic, and find answers.
+
+For example, you can use a comparison operator, such as the greater than (`>`) operator to find out if an expression (or a variable) is true:
+
+```c#
+int x = 8;
+int y = 9;
+Console.WriteLine(x > y);	//outputs False, because 8 is smaller than 9
+```
+
+In the examples below, we use the equal to (`==`) operator to evaluate an expression:
+
+```c#
+int x = 10;
+Console.WriteLine(x == 10);	//returns True, because value of x is equal to 10
+```
+
+#### Real Life Example
+
+```c#
+
+```
+
