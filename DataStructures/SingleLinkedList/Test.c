@@ -1,48 +1,42 @@
 #include "SingleLinkedList.h"
 
-void Test(void)
-{
-    SL * plist;
-    SLInit(&plist);
-    SLPushBack(&plist, 1);
-    SLPushBack(&plist, 1);
-    SLPushBack(&plist, 4);
-    SLPushBack(&plist, 5);
-    SLPushBack(&plist, 1);
-    SLPushBack(&plist, 4);
-
-
-    getchar();
+void Test(void) {
+	SL* plist;
+	SLInit(&plist);
     
+    SLPushFront(&plist, 0);
+	SLPushFront(&plist, 1);
+	SLPushFront(&plist, 8);
+	SLPushFront(&plist, 9);
+	SLPushFront(&plist, 1);
+	SLPushFront(&plist, 9);
+	SLPushFront(&plist, 1);
+	SLPushBack(&plist, 1);
+	SLPushBack(&plist, 1);
+	SLPushBack(&plist, 4);
+	SLPushBack(&plist, 5);
+	SLPushBack(&plist, 1);
+	SLPushBack(&plist, 4);
+
+
+	// SLEraseAfter(plist->next->next->next);
+	// SLPrint(plist);
+
+
+
+	//SLInsert(&plist, plist->next->next->next->next, 114514);
+	//SLInsert(&plist, plist, 114514);
+
+	//SLErase(&plist, plist->next->next->next->next);
+	//SLInsertAfter(plist, 114514);
+	//SLInsertAfter(plist->next->next->next->next->next, 114514);
+
+	SLPrint(plist);
+
 }
 
-void Test1()
-{
-    SL * plist;
-    //printf("plist = %p\n", plist);      //打印一个随机值
-    SLInit(&plist);                     //注意，这里要传递plist的指针
-    printf("plist = %p\n", plist);      //成功置空
-}
+int main(void) {
+	Test();
 
-void TestFindPositionX()
-{
-    SL * plist;
-    
-    SLInit(&plist);
-    SLPushBack(&plist, 1);
-    SLPushBack(&plist, 1);
-    SLPushBack(&plist, 9);
-    SLPushBack(&plist, 5);
-    SLPushBack(&plist, 1);
-    SLPushBack(&plist, 9);
-
-    SLPrint(plist);
-    printf("%p\n", FindPositionX(plist, 4));
-}
-
-int main(void)
-{
-    TestFindPositionX();
-
-    return 0;
+	return 0;
 }

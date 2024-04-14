@@ -1,0 +1,7 @@
+E:\Projects\Hello-World\Languages\CSharp\CSharpBasic\CSharpBasic\obj\Debug\CSharpBasic.csproj.AssemblyReference.cache
+E:\Projects\Hello-World\Languages\CSharp\CSharpBasic\CSharpBasic\obj\Debug\CSharpBasic.csproj.CoreCompileInputs.cache
+E:\Projects\Hello-World\Languages\CSharp\CSharpBasic\CSharpBasic\bin\Debug\CSharpBasic.exe.config
+E:\Projects\Hello-World\Languages\CSharp\CSharpBasic\CSharpBasic\bin\Debug\CSharpBasic.exe
+E:\Projects\Hello-World\Languages\CSharp\CSharpBasic\CSharpBasic\bin\Debug\CSharpBasic.pdb
+E:\Projects\Hello-World\Languages\CSharp\CSharpBasic\CSharpBasic\obj\Debug\CSharpBasic.exe
+E:\Projects\Hello-World\Languages\CSharp\CSharpBasic\CSharpBasic\obj\Debug\CSharpBasic.pdb
