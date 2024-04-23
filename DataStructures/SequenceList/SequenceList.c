@@ -96,3 +96,15 @@ void SLPopFront(SL * pl)
     }
     pl->size--;
 }
+
+//在pos位置插入一个元素
+void SLInsert(SL * pl, int pos, SLDataType x)
+{
+    SLCheckCapacity(pl);
+    int i;
+    //向后移动n - pos + 1个位置
+    for (i = pl->size - 1; i >= pos; i--)
+        pl->a[i + 1] = pl->a[i];
+    pl->a[pos] = x;
+    pl->size++;
+}

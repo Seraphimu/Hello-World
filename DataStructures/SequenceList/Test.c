@@ -10,10 +10,8 @@ void Test1(void)
     SLPushBack(&sl, 5);
     SLPushBack(&sl, 1);
     SLPushBack(&sl, 4);
-
-    //SLPushFront(&sl, 114514);
-    // SLPopBack(&sl);
-    // SLPopFront(&sl);
+    
+    SLInsert(&sl, 2, 114514);
 
     SLPrint(sl);
     // SLDestory(&sl);
