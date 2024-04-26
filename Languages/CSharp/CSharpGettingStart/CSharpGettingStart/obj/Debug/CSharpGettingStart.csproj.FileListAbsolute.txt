@@ -1,0 +1,7 @@
+D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\bin\Debug\CSharpGettingStart.exe.config
+D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\bin\Debug\CSharpGettingStart.exe
+D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\bin\Debug\CSharpGettingStart.pdb
+D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.csproj.AssemblyReference.cache
+D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.csproj.CoreCompileInputs.cache
+D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.exe
+D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.pdb
