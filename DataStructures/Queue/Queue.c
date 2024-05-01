@@ -37,7 +37,7 @@ void DeQueue(SqQueue * Q)
     if (IsEmpty(Q))
     {
         printf("The queue is empty.\n");
-        //exit(-1);
+        //exit(-1);                         //The exit() function will break all of the program when it is be useful.
         return;
     }
     else
