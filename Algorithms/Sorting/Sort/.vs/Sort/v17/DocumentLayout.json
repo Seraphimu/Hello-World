@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA92A4E9-3FB5-4A39-A980-F441EFA6E222}|Sort\\Sort.vcxproj|D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\BubbleSort.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{CA92A4E9-3FB5-4A39-A980-F441EFA6E222}|Sort\\Sort.vcxproj|solutionrelative:Sort\\BubbleSort.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{CA92A4E9-3FB5-4A39-A980-F441EFA6E222}|Sort\\Sort.vcxproj|D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\QuickSort.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA92A4E9-3FB5-4A39-A980-F441EFA6E222}|Sort\\Sort.vcxproj|solutionrelative:Sort\\QuickSort.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA92A4E9-3FB5-4A39-A980-F441EFA6E222}|Sort\\Sort.vcxproj|D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CA92A4E9-3FB5-4A39-A980-F441EFA6E222}|Sort\\Sort.vcxproj|solutionrelative:Sort\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA92A4E9-3FB5-4A39-A980-F441EFA6E222}|Sort\\Sort.vcxproj|D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\BubbleSort.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CA92A4E9-3FB5-4A39-A980-F441EFA6E222}|Sort\\Sort.vcxproj|solutionrelative:Sort\\BubbleSort.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CA92A4E9-3FB5-4A39-A980-F441EFA6E222}|Sort\\Sort.vcxproj|D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\Sorting.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "QuickSort.c",
+              "DocumentMoniker": "D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\QuickSort.c",
+              "RelativeDocumentMoniker": "Sort\\QuickSort.c",
+              "ToolTip": "D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\QuickSort.c",
+              "RelativeToolTip": "Sort\\QuickSort.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-04-28T16:04:45.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Swap.c",
               "DocumentMoniker": "D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\Swap.c",
               "RelativeDocumentMoniker": "Sort\\Swap.c",
@@ -46,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SelectionSorting.c",
               "DocumentMoniker": "D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\SelectionSorting.c",
               "RelativeDocumentMoniker": "Sort\\SelectionSorting.c",
@@ -54,12 +71,11 @@
               "RelativeToolTip": "Sort\\SelectionSorting.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-28T01:26:00.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T01:26:00.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Sorting.h",
               "DocumentMoniker": "D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\Sorting.h",
               "RelativeDocumentMoniker": "Sort\\Sorting.h",
@@ -67,12 +83,11 @@
               "RelativeToolTip": "Sort\\Sorting.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-28T01:22:05.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T01:22:05.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BubbleSort.c",
               "DocumentMoniker": "D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\BubbleSort.c",
               "RelativeDocumentMoniker": "Sort\\BubbleSort.c",
@@ -80,8 +95,7 @@
               "RelativeToolTip": "Sort\\BubbleSort.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-28T01:21:43.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T01:21:43.722Z"
             },
             {
               "$type": "Document",
@@ -91,7 +105,7 @@
               "RelativeDocumentMoniker": "Sort\\test.c",
               "ToolTip": "D:\\Projects\\Hello-World\\Algorithms\\Sorting\\Sort\\Sort\\test.c",
               "RelativeToolTip": "Sort\\test.c",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-04-28T01:21:31.971Z",
               "EditorCaption": ""
