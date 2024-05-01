@@ -40,11 +40,17 @@ void test_queue()
 	q.push(1);
 	q.push(4);
 
-	while (! q.empty())
+	//while (! q.empty())
+	//{
+	//	cout << q.front() << ' ';
+	//	q.pop();
+	//}
+	while (!q.empty())
 	{
 		cout << q.front() << ' ';
 		q.pop();
 	}
+
 }
 
 void test_list()
