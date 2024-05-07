@@ -20,6 +20,7 @@ public class GuessServlet extends HttpServlet {
         // 2.调用模型
         GuessService service = new GuessService();
         int result = service.guess(inputNumber);
+
         // 3.转发视图（根据调用结果
         if (result == 0) {
             request.setAttribute("message", "恭喜你，猜对了！");
