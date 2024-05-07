@@ -8,6 +8,9 @@ typedef struct SListNode {
 	struct SListNode* next;
 }SL;
 
+
+//Basic Operate
+
 //初始化
 void SLInit(SL** pphead);
 //分配空间
@@ -33,3 +36,14 @@ void SLEraseAfter(SL* pos);
 
 //打印
 void SLPrint(SL* phead);
+
+//Exercise
+
+// 面试题 02.03. 删除中间节点
+// 若链表中的某个节点，既不是链表头节点，也不是链表尾节点，则称其为该链表的「中间节点」。
+// 假定已知链表的某一个中间节点，请实现一种算法，将该节点从链表中删除。
+void deleteMidNode(SL * pos);
+
+//LCR 140. 训练计划 II
+//给定一个头节点为 head 的链表用于记录一系列核心肌群训练项目编号，请查找并返回倒数第 cnt 个训练项目编号。
+SL * trainingPlan(SL * phead, int cnt);

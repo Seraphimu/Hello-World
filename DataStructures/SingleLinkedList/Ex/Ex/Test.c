@@ -3,8 +3,8 @@
 void Test(void) {
 	SL* plist;
 	SLInit(&plist);
-    
-    SLPushFront(&plist, 0);
+
+	SLPushFront(&plist, 0);
 	SLPushFront(&plist, 1);
 	SLPushFront(&plist, 8);
 	SLPushFront(&plist, 9);
@@ -19,6 +19,13 @@ void Test(void) {
 	SLPushBack(&plist, 4);
 
 
+	SLPrint(SLKth(plist, 3));
+	//SLPrint(SLReverse(plist));
+
+
+	//deleteMidNode(plist->next->next->next);
+
+
 	// SLEraseAfter(plist->next->next->next);
 	// SLPrint(plist);
 
@@ -31,7 +38,7 @@ void Test(void) {
 	//SLInsertAfter(plist, 114514);
 	//SLInsertAfter(plist->next->next->next->next->next, 114514);
 
-	SLPrint(plist);
+	//SLPrint(plist);
 
 }
 

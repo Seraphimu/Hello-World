@@ -155,7 +155,44 @@ void SLPrint(SL* phead) {
 
 
 
+// 面试题 02.03. 删除中间节点
+// 若链表中的某个节点，既不是链表头节点，也不是链表尾节点，则称其为该链表的「中间节点」。
+// 假定已知链表的某一个中间节点，请实现一种算法，将该节点从链表中删除。
+void deleteMidNode(SL * pos)
+{
+	//判断位置是否为空
+	if (pos == NULL)
+		exit(-1);
 
+	//把pos->next的数据和指针域赋给pos，然后干掉pos->next
+	SL * tmp = pos->next;
+	pos->data = tmp->data;
+	pos->next = tmp->next;
+	free(tmp);
+}
+
+//LCR 140. 训练计划 II
+//给定一个头节点为 head 的链表用于记录一系列核心肌群训练项目编号，请查找并返回倒数第 cnt 个训练项目编号。
+SL * trainingPlan(SL * phead, int cnt)
+{
+	SL * p = phead;
+	SL * q = phead;
+
+	//先让p走cnt步，再让q和p同时走，当p走到头的时候，k就是倒数第cnt个了
+	while (cnt)
+	{
+		p = p->next;
+		cnt--;
+	}
+
+	while (p)
+	{
+		p = p->next;
+		q = q->next;
+	}
+
+	return q;
+}
 
 
 
