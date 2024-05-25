@@ -1,7 +1,0 @@
-﻿  0, 1.cpp
-D:\Projects\Hello-World\Algorithms\HomeWork\BackTracking\BackTracking\0, 1.cpp(18,20): warning C4018: “<”: 有符号/无符号不匹配
-D:\Projects\Hello-World\Algorithms\HomeWork\BackTracking\BackTracking\0, 1.cpp(35,18): warning C4018: “>=”: 有符号/无符号不匹配
-D:\Projects\Hello-World\Algorithms\HomeWork\BackTracking\BackTracking\0, 1.cpp(44,19): warning C4018: “<”: 有符号/无符号不匹配
-  Test.cpp
-  正在生成代码...
-  BackTracking.vcxproj -> D:\Projects\Hello-World\Algorithms\HomeWork\BackTracking\Debug\BackTracking.exe
