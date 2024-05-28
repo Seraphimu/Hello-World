@@ -5,3 +5,10 @@ D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\o
 D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.csproj.CoreCompileInputs.cache
 D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.exe
 D:\Projects\Hello-World\Languages\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.pdb
+D:\projects\Hello-World\CSharp\CSharpGettingStart\CSharpGettingStart\bin\Debug\CSharpGettingStart.exe.config
+D:\projects\Hello-World\CSharp\CSharpGettingStart\CSharpGettingStart\bin\Debug\CSharpGettingStart.exe
+D:\projects\Hello-World\CSharp\CSharpGettingStart\CSharpGettingStart\bin\Debug\CSharpGettingStart.pdb
+D:\projects\Hello-World\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.csproj.AssemblyReference.cache
+D:\projects\Hello-World\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.csproj.CoreCompileInputs.cache
+D:\projects\Hello-World\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.exe
+D:\projects\Hello-World\CSharp\CSharpGettingStart\CSharpGettingStart\obj\Debug\CSharpGettingStart.pdb

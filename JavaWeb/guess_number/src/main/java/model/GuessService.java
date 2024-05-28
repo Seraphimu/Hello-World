@@ -7,6 +7,7 @@ public class GuessService {
     public static int randomNumber = random.nextInt(100) + 1;
 
     public int guess(int inputNumber) {
+
         // 从web页面不断接收输入
         if (randomNumber > inputNumber) {
             return -1;
@@ -17,3 +18,4 @@ public class GuessService {
         }
     }
 }
+
