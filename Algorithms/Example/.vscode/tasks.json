@@ -3,7 +3,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "D:\\protable\\w64devkit\\bin\\g++.exe",
+            "command": "D:\\ProtableDevTools\\w64devkit\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -12,7 +12,7 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "D:\\protable\\w64devkit\\bin"
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"

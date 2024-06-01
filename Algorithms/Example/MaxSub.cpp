@@ -34,22 +34,22 @@ void Solve()
     }
 }
 
-void FindMaxSub()
+void FindendSub()
 {
     //找到最大值的下标
-    int max = 0;
+    int end = 0;
     for (int i = 0; i < SIZE; i++)
     {
-        if (dp[max] < dp[i])
+        if (dp[end] < dp[i])
         {
-            max = i;
+            end = i;
         }
     }
 
     //溯源，找到起始位置
     //用dp[i] - dp[i - 1]就能求出a[i]
     int start = 0;
-    for (int i = max; i >= 0; i--)
+    for (int i = end; i >= 0; i--)
     {
         //dp[i-1] == 0时，dp[i]为起始位置
         //dp[4] - dp[3] = a[4] = 13
@@ -66,7 +66,7 @@ void FindMaxSub()
     }
     
     //保存选择的数
-    for (int i = start; i <= max; i++)
+    for (int i = start; i <= end; i++)
     {
         solveVector[i] = arr[i];
     }
@@ -97,7 +97,7 @@ void disSolve()
 int main(void)
 {
     Solve();
-    FindMaxSub();
+    FindendSub();
     disSolve();
 
     return 0;
