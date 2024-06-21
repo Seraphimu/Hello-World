@@ -9,7 +9,9 @@
 
 int n;
 char a[MAX][MAX];    //存储图
-int dist[MAX];      //dist[i]表示从当前顶点到i的目前最短路径
+int dist[MAX];      //dist[目标] = 权值
+int path[MAX];      //path[目标] = 到瞟最短的顶点
+
 int v;
 
 //顶点编号和路径长度
