@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* 设置表格整体边框 */
+table {
+    border-collapse: collapse; /* 合并相邻单元格的边框 */
+    border: 1px solid #000; /* 设置边框颜色、宽度和样式 */
+}
+
+/* 设置表格头部（th）的边框 */
+th {
+    border: 1px solid #000;
+}
+
+/* 设置表格数据部分（td）的边框 */
+td {
+    border: 1px solid #000;
+}
